@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>PORTFOLIO</title>
+
+	<!-- ICONOS -->
+	<link rel="icon"  type="image/x-icon" href="img/favicon.png">
+
+	<!-- UNITE GALLERY -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-pV8wHaa8Qp6g8p4sC+/...==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+	<script type='text/javascript' src='unitegallery/unitegallery/js/jquery-11.0.min.js'></script>
+
+	<script type='text/javascript' src='unitegallery/unitegallery/js/unitegallery.min.js'></script>	
+	<script type='text/javascript' src='unitegallery/unitegallery/themes/default/ug-theme-default.js'></script>
+	<script type='text/javascript' src='unitegallery/unitegallery/themes/tiles/ug-theme-tiles.js'></script>
+
+	<link rel='stylesheet' href='unitegallery/unitegallery/css/unite-gallery.css' type='text/css' />
+	<link rel='stylesheet' 		  href='unitegallery/unitegallery/themes/default/ug-theme-default.css' type='text/css' />
+
+	<!-- TIPOGRAFÍA H1 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+
+	<!-- TIPOGRAFÍA H2 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap" rel="stylesheet">
+
+	<!-- TIPOGRAFÍA H3 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Tera:wght@100..900&display=swap" rel="stylesheet">
+
+	<style type="text/css">
+	
+	*{
+		margin: 0;
+	}
+
+	h1{
+  		font-family: "Oswald", sans-serif;
+	}
+
+	h2{
+		font-family: "Antonio", sans-serif;
+	}
+
+	h3{
+		font-family: "Lexend Tera", sans-serif;
+	}
+
+	body{
+		background-color: #c1c1e9;
+		min-width: 400px;
+	}
+
+	/*HEADER*/
+
+	header{
+		position: sticky;
+		top: 0;
+		z-index: 9999;
+	}
+
+	.barradenavegación{
+  		background-color: #94A2F2;
+  		width: 100%;
+ 		height: 65px;
+ 		display: flex;
+		justify-content: center; 
+  		align-items: center;
+	}
+
+	.header-contenedor{
+  		display: flex;
+  		justify-content: space-between; 
+  		align-items: center;
+  		width: 900px;
+  	}
+
+  	.logo{
+  		width:60px;
+  		margin-left:30px;
+  	}
+
+  	.logo img{
+  		width: 55px;
+  		height: 55px;
+  	}
+
+	.menu{
+  		display: flex;
+  		align-items: center;
+	}
+
+	.menu h1{
+  		margin: 0 10px;
+  		color: black;
+  		font-size: 29px;
+ 		position: relative;
+  		padding: 0 10px;
+  		font-weight: 400;
+	}
+
+	.menu h1 a{
+  		transition: all 0.3s ease;
+  		display: inline-block;
+	}
+
+	.menu h1 a:hover{
+  		transform: scale(1.1);
+  		color: white;
+	}
+
+	.redes i{
+ 	 	margin-left: 10px;
+ 	 	font-size: 25px; 
+	}
+
+	/*VIDEO 1*/
+
+	.contendedor_video1{
+		display: flex;
+        justify-content: center;
+        align-items: center;
+		position: relative;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.contendedor_video1 video{
+		width: 900px;
+		height: auto;
+	}
+
+	.contenedor_boton{
+		position: absolute;
+		text-align: center;
+		color:#FFFFFF;
+		background: linear-gradient(to right, #9ea0df, #666ce4);
+		padding: 20px 30px;
+		border-radius: 5px;
+		border: 4px solid #6e61ad;
+		font-size: 16px;
+		cursor: pointer;
+	}
+
+	/*SLIDER FOTOS*/
+
+	#film_roll{
+		width:900px;
+		margin: auto;
+	}
+	
+	.contenedor_fillroll{
+	    width: 900px;
+	    height: auto;
+	    position: relative;
+	    overflow: hidden;
+	    text-align: center;	    
+	}
+
+	.texto_fillroll{
+	    position: absolute;
+	    top: 35%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    color: #FFF79D;
+	    font-size: 50px;
+	    font-weight: bold;
+	    font-family: "Antonio", sans-serif; 
+	}
+
+	.texto_secundario{
+	    position: absolute;
+	    top: 50%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    color: #FFF79D;
+	    font-size: 22px;
+	    font-weight: 400;
+	    font-family: "Antonio", sans-serif; 
+	}
+
+	.boton_vamos{
+	    position: absolute;
+	    top: 65%;
+	    left: 50%;
+	    transform: translate(-50%, -50%);
+	    background-color: #6d3bd8;
+	    color: #FFF79D;
+	    border: 2px solid #FFF79D;
+	    width: 140px; 
+	    height: 45px;  
+	    display: flex;           
+	    justify-content: center;    
+	    align-items: center;       
+	    border-radius: 6px;
+	    font-size: 20px;
+	    cursor: pointer;
+	    font-weight: bold;
+	    font-family: "Antonio", sans-serif;
+	    text-align: center;
+	}
+
+	.boton_vamos:hover{
+	    background-color: #5d2bbf;
+	}
+
+	/*BANNERS 2D, 3D Y EDICIÓN DE VIDEO*/
+
+	.banners{
+		margin: 0 auto;
+		width: 900px;
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	/*CONCEPTART*/
+
+	.CONCEPTART{
+		width: 896px;
+	    height: 40px;               
+	    margin: 0 auto;
+	    background-color: #d2adfd;
+	    border: 4px solid #8a2be2;  
+	    display: flex;              
+	    justify-content: center;    
+	    align-items: center;         
+	    text-align: center;       
+	    box-shadow: 0 0 20px 8px #8A2BE280; 
+	    margin-bottom: 20px;
+	}
+
+	/*ILUSTRACIONES Y DISEÑO DE ESCENARIOS*/
+
+	.ILUSYDISEÑO{
+		width: 896px;
+	    height: 40px;               
+	    margin: 0 auto;
+	    background-color: #d2adfd;
+	    border: 4px solid #8a2be2;  
+	    display: flex;              
+	    justify-content: center;    
+	    align-items: center;         
+	    text-align: center;       
+	    box-shadow: 0 0 20px 8px #8A2BE280; 
+	    margin-bottom: 20px;
+	    margin-top: 20px;
+	}
+
+	/*RENDERS*/
+
+	.RENDERS{
+		width: 896px;
+	    height: 40px;               
+	    margin: 0 auto;
+	    background-color: #9de3e6;
+	    border: 4px solid #49abaf;  
+	    display: flex;              
+	    justify-content: center;    
+	    align-items: center;         
+	    text-align: center;       
+	    box-shadow: 0 0 20px 8px #47b0b4; 
+	    margin-bottom: 20px;
+	    margin-top: 20px;
+	}
+	
+	/*ABOUT*/
+
+	.about{
+	    width: 860px;
+	    margin: 0 auto;
+	    display: flex;
+	    align-items: center;
+	    background: linear-gradient(to right, #9ea0df, #666ce4);
+	    padding: 20px;         
+	}
+
+	.about img{
+	    width: 300px;
+	    height: auto;
+	    object-fit: cover;
+	    margin-right: 20px;    
+	}
+
+	.texto_aboutme{
+	    flex: 1;
+	    text-align: justify;
+	    line-height: 1.6;
+	    color: #FFFFFF;
+	    font-size: 14px;
+	}
+
+	/*CORREO*/
+
+	.correo {
+	    width: 900px;
+	    margin: 0 auto;                 
+	    background-color: #F6ECB3;         
+	    color: w#000000;                     
+	    height: 100px;                    
+	    display: flex;                    
+	    flex-direction: column;           
+	    justify-content: center;         
+	    align-items: center;
+	    margin-top: 20px;             
+	}	
+
+	.correo h2, .correo h3 {
+    	margin: 5px 0;                   
+	}
+
+	/*BARRA DE HABILIDADES*/
+
+	.contenedor_programas{
+		width: 900px;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+
+	.chart{
+	    padding-bottom: 2vh;
+	    width: 100%;             
+	    max-width: 100%;         
+	    box-sizing: border-box;
+	}
+
+	.skill-item{
+	    margin-bottom: 2.5vh;    
+	    width: 100%;
+	}
+
+	.skill-header{
+	    display: flex;           
+	    justify-content: space-between; 
+	    margin-bottom: 0.8vh;
+	    font-family: "Zen Dots", sans-serif;
+	    font-size: 2vh;          
+	    color: black;          
+	}
+
+	.skill-percentage{
+	    color: #666ce4;
+	}
+
+	.skill-bar-bg{
+	    width: 100%;            
+	    height: 1.5vh;           
+	    background-color: #e0e0e0; 
+	    border-radius: 1vh;      
+	    overflow: hidden;       
+	}
+
+	.skill-bar-fill{
+	    height: 100%;
+	    background-color: #666ce4; 
+	    border-radius: 1vh;      
+	    animation: fillBar 1.5s ease-out forwards;
+	    transform-origin: left;
+	    transform: scaleX(0);    
+	}
+
+	@keyframes fillBar {
+	    to {
+	        transform: scaleX(1); 
+	    }
+	}
+
+	/*FOOTER*/
+
+	footer{
+	    background-color: #94A2F2;
+	    width: 100%;
+	    height: 120px;
+	    display: flex;              
+	    flex-direction: column;     
+	    justify-content: center;    
+	    align-items: center;       
+	}
+
+	.redesfooter i {
+	    color: white;               
+	    font-size: 28px;          
+	    margin: 0 10px;            
+	}
+
+	.textofooter p {
+	    color: white;               
+	    font-size: 18px;            
+	    margin-top: 10px;           
+	}
+
+	/*GALLERY 1*/
+
+	#gallery{
+		margin: 0 auto;	
+	}
+
+	/*GALLERY 2*/
+
+	.galeriaB2{
+		margin: 0 auto;
+		width: 900px;
+	}
+
+	@media(max-width:904px){
+		.header{
+			width: 100%;
+			justify-content: space-around;
+		}
+
+		.menu h1{
+			font-size: 24px;
+			margin: 0 5px;
+		}
+
+		.redes i{
+			font-size: 20px;
+		}
+
+		.contendedor_video1 video{
+			width: 100%;
+		}
+
+		.contenedor_boton{
+			font-size: 12px;
+			padding: 10px 15px;
+		}
+
+		#film_roll{
+			width: 100%;
+		}
+
+		.contenedor_fillroll{
+			width: 100%;
+		}
+
+		.texto_fillroll{
+			font-size: 40px;
+		}
+
+		.texto_secundario{
+			font-size: 18px;
+		}
+
+		.boton_vamos{
+			width: 120px;
+			height: 40px;
+			font-size: 18px;
+		}
+
+		.banners{
+			width: 100%;
+			margin: 0;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.banners img{
+			width: 100%;
+		}
+
+		.CONCEPTART, .ILUSYDISEÑO, .RENDERS{
+			width: 100%;
+			margin: 0;
+			box-sizing: border-box;
+			margin-top: 20px;
+			margin-bottom: 20px;
+		}
+
+		.about{
+			width: 100%;
+			flex-direction: column;
+			padding: 15px;
+			margin: 0;
+			box-sizing: border-box;
+			margin-bottom: 20px;
+		}
+
+		.about img{
+			width: 100%;
+			max-width: 250px;
+			margin-right: 0;
+			margin-bottom: 15px;
+		}
+
+		.texto_aboutme{
+			font-size: 13px;
+		}
+
+		.correo{
+			width: 100%;
+			margin: 0;
+			margin-bottom: 20px;
+		}
+
+		.contenedor_programas{
+			width: 100%;
+			margin: 0;
+		}
+
+		.galeriaB2{
+			width: 100%;
+			margin: 0;
+		}
+
+		footer{
+			height: 100px;
+		}
+
+		.redesfooter i{
+			font-size: 24px;
+		}
+
+		.textofooter p{
+			font-size: 16px;
+		}
+	}
+
+	@media(max-width:480px){
+		.contenedor_boton{
+			font-size: 10px;
+			padding: 8px 12px;
+			border-radius: 3px;
+		}
+	}
+
+	</style>
+
+</head>
+<body>
+
+	<header class="barradenavegación">
+
+		<div class="header-contenedor">
+			<div class="logo">
+				<img src="img/favicon.png" alt="Logo">
+			</div>
+
+	    	<nav class="menu">
+	      		<h1><a href="#inicio" style="color: inherit; text-decoration: none;">Inicio</a></h1>
+	      		<h1><a href="#porfolio" style="color: inherit; text-decoration: none;">Portfolio</a></h1>
+	      		<h1><a href="#about" style="color: inherit; text-decoration: none;">About</a></h1>
+	    	</nav>
+
+	    	<div class="redes">
+	    		<a href="#correo" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-envelope"></i></a>
+	      		<a href="https://www.instagram.com/rei.aart/" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-instagram"></i></a>
+	    	</div>
+	  	</div>
+
+	</header>
+
+	<div class="contendedor_video1" id="inicio">
+
+		<video autoplay loop muted playsinline>
+	  		<source src="video/video1.mp4" type="video/mp4">
+		</video>
+		<div class="contenedor_boton">
+			<a href="#about" style="color: inherit; text-decoration: none;"><h2>☆ <u>BIENVENIDOS A MI PORTFOLIO</u> ☆<br>
+			¿QUIÉN SOY?</h2></a>
+		</div>
+
+	</div>
+
+ 	<div id="film_roll">
+
+		<div class="contenedor_fillroll">
+		    <span class="texto_fillroll">EDICIÓN</span>
+			<div class="texto_secundario">VIDEOS, EDITS</div>
+			<button class="boton_vamos"><a href="#edicion" style="color: inherit; text-decoration: none;">¡ VAMOS !</button>
+			<a><img src="img/img3_slider.jpg"></a>
+		</div>
+
+	  <div class="contenedor_fillroll">
+	    <span class="texto_fillroll">2D</span>
+	    <div class="texto_secundario">ILUSTRACIONES Y ANIMACIONES</div>
+	    <button class="boton_vamos"><a href="#porfolio" style="color: inherit; text-decoration: none;">¡ VAMOS !</button>
+	    <a><img src="img/img1_slider.jpg"></a>
+	  </div>
+
+	  <div class="contenedor_fillroll">
+	    <span class="texto_fillroll">3D</span>
+	    <div class="texto_secundario">RENDERS, MODELOS, ESCENARIOS</div>
+	    <button class="boton_vamos"><a href="#3D" style="color: inherit; text-decoration: none;">¡ VAMOS !</button>
+	    <a><img src="img/img2_slider.jpg"></a>
+	  </div>
+
+	</div>
+
+	<div class="banners" id="porfolio">
+		<img src="img/banner_1.jpg">
+	</div>
+
+	<div class="CONCEPTART"><h2>CONCEPT ART</h2></div>
+
+	<div class="galeriaB2">
+
+		<div id="galeria2" style="display:none;">
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen1_2D"
+			     src="img/imagen1_2D.jpeg"
+			     data-image="img/imagen1_2D.jpeg"
+			     data-description="This is a imagen1_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen2_2D"
+			     src="img/imagen2_2D.jpeg"
+			     data-image="img/imagen2_2D.jpeg"
+			     data-description="This is a imagen2_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen11_2D"
+			     src="img/imagen11_2D.jpeg"
+			     data-image="img/imagen11_2D.jpeg"
+			     data-description="This is a imagen11_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen9_2D"
+			     src="img/imagen9_2D.jpeg"
+			     data-image="img/imagen9_2D.jpeg"
+			     data-description="This is a imagen9_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen10_2D"
+			     src="img/imagen10_2D.jpeg"
+			     data-image="img/imagen10_2D.jpeg"
+			     data-description="This is a imagen10_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen14_2D"
+			     src="img/imagen14_2D.jpg"
+			     data-image="img/imagen14_2D.jpg"
+			     data-description="This is a imagen14_2D"
+			     style="display:none">
+			</a>
+		</div>
+	</div>
+
+	<div class="ILUSYDISEÑO"><h2>ILUSTRACIONES Y DISEÑO DE ESCENARIOS</h2></div>
+
+	<div class="galeriaB2">
+
+		<div id="galeria3" style="display:none;">
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen3_2D"
+			     src="img/imagen3_2D.jpeg"
+			     data-image="img/imagen3_2D.jpeg"
+			     data-description="This is a imagen3_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen4_2D"
+			     src="img/imagen4_2D.jpeg"
+			     data-image="img/imagen4_2D.jpeg"
+			     data-description="This is a imagen4_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen6_2D"
+			     src="img/imagen6_2D.jpeg"
+			     data-image="img/imagen6_2D.jpeg"
+			     data-description="This is a imagen6_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen5_2D"
+			     src="img/imagen5_2D.jpeg"
+			     data-image="img/imagen5_2D.jpeg"
+			     data-description="This is a imagen5_2D"
+			     style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen15_2D"
+			     src="img/imagen15_2D.jpg"
+			     data-image="img/imagen15_2D.jpg"
+			     data-description="This is a imagen15_2D"
+			     style="display:none">
+			</a>
+		</div>
+	</div>
+
+	<div class="banners" id="3D">
+		<img src="img/banner_2.jpg">
+	</di>
+
+	<div class="RENDERS"><h2>RENDERS</h2></div>
+
+	<div id="gallery" class="bl" style="display:none;">
+		
+		<img alt="imagen11_3D"
+			src="img/imagen11_3D.jpeg"
+			data-image="img/imagen11_3D.jpeg"
+			data-description="Imagen11_3D">
+		
+			
+		<img alt="imagen10_3D"
+			src="img/imagen10_3D.jpeg"
+			data-image="img/imagen10_3D.jpeg"
+			data-description="Imagen10_3D">
+
+		<img alt="imagen17_3D"
+			src="img/imagen17_3D.jpeg"
+			data-image="img/imagen17_3D.jpeg"
+			data-description="Imagen17_3D_">
+
+		<img alt="imagen18_3D"
+			src="img/imagen18_3D.jpeg"
+			data-image="img/imagen18_3D.jpeg"
+			data-description="Imagen18_3D">
+
+		<img alt="imagen9_3D"
+			src="img/imagen9_3D.jpeg"
+			data-image="img/imagen9_3D.jpeg"
+			data-description="Imagen9_3D">
+
+		<img alt="imagen21_3D"
+			src="img/imagen21_3D.jpeg"
+			data-image="img/imagen21_3D.jpeg"
+			data-description="Imagen21_3D">
+
+		<img alt="imagen20_3D"
+			src="img/imagen20_3D.jpeg"
+			data-image="img/imagen20_3D.jpeg"
+			data-description="Imagen20_3D">
+
+		<img alt="imagen12_3D"
+			src="img/imagen12_3D.jpeg"
+			data-image="img/imagen12_3D.jpeg"
+			data-description="Imagen12_3D">
+
+		<img alt="imagen13_3D"
+			src="img/imagen13_3D.jpeg"
+			data-image="img/imagen13_3D.jpeg"
+			data-description="Imagen13_3D">
+
+		<img alt="imagen14_3D"
+			src="img/imagen14_3D.jpeg"
+			data-image="img/imagen14_3D.jpeg"
+			data-description="Imagen14_3D">
+
+		<img alt="imagen15_3D"
+			src="img/imagen15_3D.jpeg"
+			data-image="img/imagen15_3D.jpeg"
+			data-description="Imagen15_3D">
+
+		<img alt="imagen16_3D"
+			src="img/imagen16_3D.jpeg"
+			data-image="img/imagen16_3D.jpeg"
+			data-description="Imagen16_3D"> 
+
+		</div>
+
+	<div class="RENDERS"><h2>DISEÑO DE PERSONAJES</h2></div>
+
+	<div class="galeriaB2">
+
+		<div id="galeria4" style="display:none;">
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen4_3D"
+				src="img/imagen4_3D.jpeg"
+				data-image="img/imagen4_3D.jpeg"
+				data-description="This is a imagen4_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen3_3D"
+				src="img/imagen3_3D.jpeg"
+				data-image="img/imagen3_3D.jpeg"
+				data-description="This is a imagen3_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen1_3D"
+				src="img/imagen1_3D.jpeg"
+				data-image="img/imagen1_3D.jpeg"
+				data-description="This is a imagen1_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen2_3D"
+				src="img/imagen2_3D.jpeg"
+				data-image="img/imagen2_3D.jpeg"
+				data-description="This is a imagen2_3D"
+				style="display:none">
+			</a>
+			
+			<a href="http://unitegallery.net">
+			<img alt="imagen6_3D"
+				src="img/imagen6_3D.jpeg"
+				data-image="img/imagen6_3D.jpeg"
+				data-description="This is a imagen6_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen5_3D"
+				src="img/imagen5_3D.jpeg"
+				data-image="img/imagen5_3D.jpeg"
+				data-description="This is a imagen5_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen8_3D"
+				src="img/imagen8_3D.jpeg"
+				data-image="img/imagen8_3D.jpeg"
+				data-description="This is a imagen8_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen7_3D"
+				src="img/imagen7_3D.jpeg"
+				data-image="img/imagen7_3D.jpeg"
+				data-description="This is a imagen7_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen22_3D"
+				src="img/imagen22_3D.jpeg"
+				data-image="img/imagen22_3D.jpeg"
+				data-description="This is a imagen22_3D"
+				style="display:none">
+			</a>
+
+			<a href="http://unitegallery.net">
+			<img alt="imagen23_3D"
+				src="img/imagen23_3D.jpeg"
+				data-image="img/imagen23_3D.jpeg"
+				data-description="This is a imagen23_3D"
+				style="display:none">
+			</a>
+		</div>
+	</div>
+
+	<div class="RENDERS"><h2>TURN AROUND PERSONAJES</h2></div>
+
+	<div id="gallery2" class="bl" style="display:none;">
+		
+		<img alt="Turn Around Lupa sin Texturas"
+             data-type="youtube"
+             src="video/foto_perfil7.jpg"
+             data-videoid="QOZyD-hvb3A"
+             data-description="Turn Around Lupa sin Texturas">
+
+        <img alt="Turn Around Lupa con Texturas"
+             data-type="youtube"
+             src="video/foto_perfil5.jpg"
+             data-videoid="V7EAB9WEzE0"
+             data-description="Turn Around Lupa con Texturas">
+
+        <img alt="Turn Around Ada Wong"
+             data-type="youtube"
+             src="video/foto_perfil8.jpg"
+             data-videoid="vDtz6ZDaDXE"
+             data-description="Turn Around Ada Wong">
+	</div>
+
+	<div class="RENDERS"><h2>ANIMACIONES</h2></div>
+
+	<div id="gallery3" class="bl" style="display:none;">
+		
+		<img alt="Nave Star Wars 3D"
+             data-type="youtube"
+             src="video/foto_perfil1.jpg"
+             data-videoid="9NNmT-Mw8uU"
+             data-description="Nave Star Wars 3D">
+
+        <img alt="Animación Lupa"
+             data-type="youtube"
+             src="video/foto_perfil3.jpg"
+             data-videoid="oXuCNMfKj7U"
+             data-description="Animación Lupa">
+
+        <img alt="Circuito"
+             data-type="youtube"
+             src="video/foto_perfil2.jpg"
+             data-videoid="jrlNG6FZtsU"
+             data-description="Circuito">
+
+         <img alt="Tour Casa 3D"
+             data-type="youtube"
+             src="video/foto_perfil4.jpg"
+             data-videoid="Z9SxGvEcDIo"
+             data-description="Tour Casa 3D">
+
+         <img alt="Plano Estación"
+             data-type="youtube"
+             src="video/foto_perfil9.jpg"
+             data-videoid="Nd1byj9gSV8"
+             data-description="Plano Estación">
+
+          <img alt="Animación Lampara Pixar"
+             data-type="youtube"
+             src="video/foto_perfil6.jpg"
+             data-videoid="TBKJ-pmTNQ0"
+             data-description="Plano Estación">
+	</div>
+
+	<div class="banners" id="edicion">
+		<img src="img/banner_3.jpg">
+	</div>
+
+
+	<div id="gallery4" class="bl" style="display:none;">
+		
+		<img alt="Video Montaje Musical"
+             data-type="youtube"
+             src="video/foto_perfil10.jpg"
+             data-videoid="vVpDJJjNvQI"
+             data-description="Video Montaje Musical">
+
+        <img alt="Montaje Musical Inspirador"
+             data-type="youtube"
+             src="video/foto_perfil11.jpg"
+             data-videoid="oK-ovd78M0k"
+             data-description="Montaje Musical Inspirador">
+
+        <img alt="KineticComplejo"
+             data-type="youtube"
+             src=""
+             data-videoid="BvFubZHDxCY"
+             data-description="KineticComplejo">
+
+         <img alt="MASCARAS"
+             data-type="youtube"
+             src=""
+             data-videoid="ptsaOLXFYVg"
+             data-description="MASCARAS">
+
+	</div>
+
+	<div class="banners">
+		<img src="img/banner_4.jpg">
+	</div>
+
+	<div class="about" id="about">
+    <img src="img/foto_aboutme.jpeg">
+    
+    	<div class="texto_aboutme">
+       		<h1>¡ HOLA ME PRESENTO ! ...</h1>
+        	<h3>
+            Soy Irene, Irene Estrada Gil. Para abreviar, Rei. <br>
+    		Mis aficiones incluyen escuchar música, ver series y películas, salir y disfrutar de nuevas experiencias. 
+    		Me considero una persona creativa, constante y trabajadora. <br>
+    		Mis habilidades incluyen la edición, las animaciones, el modelado 3D y la ilustración.
+        	</h3>
+    	</div>
+	</div>
+
+	<div class="correo" id="correo">
+    	<h2>CORREO ELECTRÓNICO</h2>
+    	<h3>ireneestradagil@gmail.com</h3>
+	</div>
+
+	<div class="contenedor_programas">
+					
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title"><h2>BLENDER</h2></span>
+					<span class="skill-percentage">80%</span>
+				</div>
+
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 80%;"></div>
+				</div>
+			</div>
+			</div>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title"><h2>PHOTOSHOP</h2></span>
+					<span class="skill-percentage">70%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 70%;"></div>
+				</div>
+			</div>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title"><h2>PREMIERE</h2></span>
+					<span class="skill-percentage">85%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 85%;"></div>
+				</div>
+			</div>
+
+			<div class="skill-item">
+				<div class="skill-header">
+					<span class="skill-title"><h2>AFTER EFFECTS</h2></span>
+					<span class="skill-percentage">65%</span>
+				</div>
+				<div class="skill-bar-bg">
+					<div class="skill-bar-fill" style="width: 65%;"></div>
+				</div>
+			</div>
+
+	</div>
+
+	<footer>
+	    <div class="redesfooter">
+	        <a href="#correo" style="color: inherit; text-decoration: none;"><i class="fa-solid fa-envelope"></i></a>
+	        <a href="https://www.instagram.com/rei.aart/" style="color: inherit; text-decoration: none;"><i class="fa-brands fa-instagram"></i></a>
+	    </div>
+
+	    <div class="textofooter">
+	        <p>© REI.ART</p>
+	    </div>
+	</footer>
+
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery").unitegallery();
+			gallery_theme: "default"
+
+		});
+		
+	</script>
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery2").unitegallery();
+			gallery_theme: "default"
+
+		});
+		
+	</script>
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery3").unitegallery();
+			gallery_theme: "default"
+
+		});
+		
+	</script>
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#gallery4").unitegallery();
+			gallery_theme: "default"
+
+		});
+		
+	</script>
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#galeria2").unitegallery({
+				gallery_theme: "tiles",
+				gallery_width: "100%",
+				tiles_type:"justified",
+			});
+		});
+	
+	</script>
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#galeria3").unitegallery({
+				gallery_theme: "tiles",
+				gallery_width: "100%",
+				tiles_type:"justified",
+			});
+		});
+	
+	</script>
+
+	<script type="text/javascript">
+
+		jQuery(document).ready(function(){
+
+			jQuery("#galeria4").unitegallery({
+				gallery_theme: "tiles",
+				gallery_width: "100%",
+				tiles_type:"justified",
+			});
+		});
+	
+	</script>
+	
+	<script src="film_roll-master/film_roll-master/js/jquery.film_roll.js"></script>
+
+	 <script>
+  		jQuery(function() {
+   		 var film_roll = new FilmRoll({
+        container: '#film_roll',
+        height: 300,
+      });
+  	});
+	</script>
+
+</body>
+</html>
